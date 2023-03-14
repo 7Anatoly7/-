@@ -1,7 +1,17 @@
 The game is called "Field of Wonders". It is designed to guess the hidden words.
 
-Its essence lies in the fact that one word is taken from a certain list of words, which must be guessed. All words consist only of Russian lowercase letters, but in addition to them, you can also enter commands. The game will continue until you guess the word or want to exit (using the !exit command). If you guess the word, then the program displays a victory message and you win the game, and if you exit without guessing the word, then the program says goodbye to you, and in fact it is considered a loss.
+Its essence lies in the fact that one word is taken from a certain list of words, which must be guessed. 
+All words consist only of Russian lowercase letters, but in addition to them, you can also enter commands. 
+The game will continue until you guess the word or want to exit (using the !exit command). 
+If you guess the word, then the program displays a victory message and you win the game, and if you exit without guessing the word, then the program says goodbye to you, and in fact it is considered a loss.
 
-Here's how the program works. First comes the selection of a random word from a certain list. All words consist only of Russian lowercase letters. Next, the game begins. During the game, the number of attempts to guess the word is counted. Letters not found in a word are marked with asterisks, and if a letter is found, then the asterisk is replaced with the letter itself. If you guess all the letters in a word, the program displays a victory message. You can also enter not just a letter, but the whole word. If the word is guessed, then you win, and if not, the program displays a message stating that you did not guess the word. However, if you find a letter in a word, then it cannot be used again, since it has already been guessed. If you enter some other character instead of Russian lowercase/Russian lowercase when guessing a letter or the whole word, the program displays a message about incorrect input. But if the first character of the string is an exclamation mark, then there is a check to see if it is a command and if there is one. What programs are there and what they do is already recorded here. At the end of the game (this is either a victory or an exit), the number of attempts spent on guessing the word is displayed.
+Here's how the program works. First comes the selection of a random word from a certain list. All words consist only of Russian lowercase letters. 
+Next, the game begins. During the game, the number of attempts to guess the word is counted. 
+Letters not found in a word are marked with asterisks, and if a letter is found, then the asterisk is replaced with the letter itself. 
+If you guess all the letters in a word, the program displays a victory message. You can also enter not just a letter, but the whole word. 
+If the word is guessed, then you win, and if not, the program displays a message stating that you did not guess the word. However, if you find a letter in a word, then it cannot be used again, since it has already been guessed. 
+If you enter some other character instead of Russian lowercase/Russian lowercase when guessing a letter or the whole word, the program displays a message about incorrect input. 
+But if the first character of the string is an exclamation mark, then there is a check to see if it is a command and if there is one. What programs are there and what they do is already recorded here. At the end of the game (this is either a victory or an exit), the number of attempts spent on guessing the word is displayed.
 
-In the game, besides the !exit command, there are other commands: !help(display the current help), !use(show used letters, i.e. words used for guessing), !remain(show remaining letters, i.e. more words not used for guessing) and !continue(skip a turn).
+In the game, besides the !exit command, there are other commands: !help(display the current help), 
+!use(show used letters, i.e. words used for guessing), !remain(show remaining letters, i.e. more words not used for guessing) and !continue(skip a turn).
