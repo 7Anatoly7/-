@@ -11,7 +11,7 @@ count = 0
 print('!help - вывод текущей справки\n'
       '!use - показать использованные буквы\n'
       '!remain - показать оставшиеся буквы\n'
-      '!continue - пропустить ход\n'
+      '!surrender - сдаться\n'
       '!exit - выйти из игры')
 while True:
     # Подсчёт количества попыток
@@ -30,7 +30,7 @@ while True:
     # Ввод буквы или всего слова целиком
     players_letter = input('Введите букву или всё слово: ').lower()
     # Проверка, введена ли одна буква и буква ли это вообще
-    if 'a' <= players_letter <= 'я' and len(players_letter) == 1:
+    if len(players_letter) == 1 and 'а' <= players_letter <= 'я':
         # Проверка, есть ли буква в слове и не была ли она уже названа
         if players_letter in hidden_word and players_letter not in used_letters:
             print('Ура, вы угадали букву!')
