@@ -26,6 +26,7 @@ while True:
     # Проверка, найдены ли все буквы в слове
     if set(hidden_word) == find_letters:
         print('Ура, победа! Вы угадали слово!')
+        # Проверка, хочет ли игрок начать игру заново
         question2 = input('Хотите другое загаданное слово?(да/нет) ').lower()
         is_out = False
         while True:
@@ -58,6 +59,7 @@ while True:
         # Проверка, угадано ли слово
         if players_letter == hidden_word:
             print('Ура, победа! Вы угадали слово!')
+            # Проверка, хочет ли игрок начать игру заново
             question2 = input('Хотите другое загаданное слово?(да/нет) ').lower()
             is_out = False
             while True:
@@ -73,8 +75,10 @@ while True:
                     question2 = input('Хотите другое загаданное слово?(да/нет) ').lower()
             if is_out:
                 break
+        # Проверка на наличие пробелов в строке
         elif ' ' in players_letter:
             print('Загадано только одно слово')
+        # Проверка, может ли строка состоять более чем из одной буквы, но по длине быть меньше или больше загаданного слова
         elif len(players_letter) < len(hidden_word):
             print('Вводите по одной букве')
         elif len(players_letter) > len(hidden_word):
@@ -100,6 +104,7 @@ while True:
                 question1 = input('Вы уверены, что хотите сдаться? ').lower()
                 if question1 == 'да':
                     print('Загаданное слово:', hidden_word)
+                    # Проверка, хочет ли игрок начать игру заново
                     question2 = input('Хотите другое загаданное слово?(да/нет) ').lower()
                     is_out = False
                     while True:
